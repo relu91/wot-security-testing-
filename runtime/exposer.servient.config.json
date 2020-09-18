@@ -1,0 +1,19 @@
+{
+  "servient": {
+    "clientOnly": false,
+    "scriptAction": false
+  },
+  "http": { "port": 8080, "security": {
+    "scheme": "basic"
+  },
+  "allowSelfSigned": true 
+  },
+  "coap": { "port": 5683 },
+  "log": { "level": "info" },
+  "credentials": {
+    "urn:dev:1":{
+      "username":"test",
+      "password":"test"
+    }
+  }
+}

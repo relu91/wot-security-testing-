@@ -1,0 +1,23 @@
+{
+    "@context": [
+        "https://www.w3.org/2019/wot/td/v1"
+    ],
+    "@type": [
+        "Thing"
+    ],
+    "id": "urn:dev:1",
+    "title": "Exposer",
+    "securityDefinitions": {
+        "basic_sec" :{
+            "scheme": "basic"
+        }
+    },
+    "security": "basic_sec",
+    "actions": {},
+    "properties": {
+        "canYouReadMe":{
+            "type": "string"
+        }
+    },
+    "events": {}
+}

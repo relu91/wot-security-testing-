@@ -1,0 +1,28 @@
+{
+  "name": "runtime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "thing.js",
+  "scripts": {
+    "build:exposer": "wam build --typescript ./src/exposer.ts ./dist/exposer.js",
+    "build:consumer": "wam build --typescript ./src/consumer.ts ./dist/consumer.js",
+    "start:exposer": "wot-servient -f exposer.servient.config.json ./dist/exposer.js",
+    "start:consumer": "wot-servient -f consumer.servient.config.json ./dist/consumer.js",
+    "debug:exposer": "wot-servient --inspect-brk -f exposer.servient.config.json ./dist/exposer.js",
+    "debug:consumer": "wot-servient --inspect-brk -f consumer.servient.config.json ./dist/consumer.js"
+  },
+  "keywords": [
+    ""
+  ],
+  "author": "Cristiano Aguzzi",
+  "license": "MIT",
+  "devDependencies": {
+    "@node-wot/cli": "^0.7.1",
+    "@arces-wot/wam": "^0.5.1",
+    "@rollup/plugin-typescript": "^2.0.1",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {
+    "@node-wot/core": "^0.7.1"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "servient": {
+    "clientOnly": true
+  },
+  "log": { "level": "debug" },
+  "credentials": {
+    "urn:dev:1": {
+      "username": "test",
+      "password": "test"
+    }
+  }
+}
